@@ -4,15 +4,16 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color:#7568ad;
+    background-color: #7568ad;
 }
 
 .header {
     display: flex; /* Activa el modelo flexbox */
     align-items: center; /* Alinea verticalmente la imagen y el bloque de texto */
-    justify-content: center; /* Alinea todo a la izquierda */
+    justify-content: center; /* Centra el contenido */
     gap: 40px; /* Espacio entre la imagen y el texto */
     padding: inherit;
+    flex-wrap: wrap; /* Para que los elementos se reorganicen en pantallas pequeñas */
 }
 
 .profile-pic {
@@ -21,76 +22,47 @@ body {
 }
 
 .text-container {
-    display: flex; /* Activa flexbox en el contenedor de texto */
-    flex-direction: column; /* Alinea el texto en columna (uno debajo del otro) */
+    display: flex;
+    flex-direction: column;
 }
 
 .header h1, .header p {
-    margin: 0; /* Elimina los márgenes predeterminados para mejor alineación */
+    margin: 0;
 }
 
-
-h1 {
-    margin: 10px 0;
+/* Sección de "Sobre mí" y otras */
+section {
+    background: rgb(114 175 229);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-h2, h3 {
-    color: #333;
-}
-
-/* Estilos para las listas */
+/* Listas */
 ul {
-    list-style-type: disc; /* Asegura que la lista tenga viñetas de tipo punto */
-    padding-left: 40; /* Espacio a la izquierda para las viñetas */
-    
+    list-style-type: disc;
+    padding-left: 40px;
 }
 
-/* Estilo para los elementos de la lista */
-/* li {
-    display: inline-flex; /* Define el contenedor como un flexbox */
-    align-items: flex-start; /* Alinea verticalmente el texto y la imagen */
-    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
-} */
-li {
-    display: inline-flex;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-li::before {
-    color: #333; /* Color de la viñeta */
-    font-size: 20px; /* Tamaño de la viñeta */
-    margin-right: 10px; /* Espacio entre la viñeta y el texto */
-    line-height: 1;
-}
-/* Estilo para los certificados */
+/* Certificados */
 .profile-cert {
-    width: 100px; /* Ancho original de la imagen */
-    transition: transform 0.3s; /* Transición suave al agrandar */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
-    margin-left: 10px; /* Espacio a la izquierda de la imagen */
+    width: 100px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 .profile-cert.agrandada {
-    transform: scale(6); /* Escala la imagen al doble de su tamaño */
-}
-
-/* Estilos para secciones */
-section {
-    background: rgb(114 175 229); /* Fondo blanco para secciones */
-    padding: 15px; /* Espaciado interno */
-    margin-bottom: 20px; /* Espacio entre secciones */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Sombra sutil */
+    transform: scale(6);
 }
 
 /* Botón */
 #info-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF; /* Color azul */
-    color: white; /* Texto blanco */
+    background-color: #007BFF;
+    color: white;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -98,5 +70,52 @@ section {
 }
 
 #info-button:hover {
-    background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+    background-color: #0056b3;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Cambia a layout en columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 150px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .text-container h1 {
+        font-size: 1.5em; /* Ajusta el tamaño del texto */
+    }
+
+    ul {
+        padding-left: 20px; /* Ajusta el padding para listas en pantallas pequeñas */
+    }
+
+    section {
+        padding: 10px; /* Reduce el padding de las secciones en pantallas pequeñas */
+    }
+
+    #info-button {
+        padding: 8px 15px; /* Reduce el tamaño del botón en pantallas pequeñas */
+        font-size: 0.9em;
+    }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 100px; /* Aún más pequeña para pantallas muy pequeñas */
+    }
+
+    .text-container h1 {
+        font-size: 1.2em; /* Ajusta el tamaño del texto aún más */
+    }
+
+    #info-button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
 }
