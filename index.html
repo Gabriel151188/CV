@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV - GABRIEL VILLANUEVA</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <!-- Header con tu nombre y foto -->
+    <header class="header">
+        <img src="img/foto.jpg" alt="Tu Foto" class="profile-pic">
+        <div class="text-container">
+            <h1>GABRIEL VILLANUEVA</h1>
+            <p>Desarrollador Web | Frontend | SQL</p>
+        </div>
+        <section id="more-info">
+            <button id="info-button">Mostrar test de Personalidad</button>
+            <p id="extra-info" style="display:none;">"Mi tipo de personalidad podría ser ENTP (Extravertido, Intuitivo, Pensador, Perceptivo), también conocido como "El Debatidor". Este tipo se caracteriza por ser ingenioso, curioso, con habilidades analíticas, y a menudo disfruta explorar nuevas ideas y debatir puntos de vista. También suelen ser espontáneos y disfrutan de la improvisación.."</p>
+        </section>
+    </header>
+    
+
+    <!-- Sección sobre mí -->
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy Profesor de Historia en nivel secundario y actualmente trabajo en el área de auditoría en una importante empresa gastronómica. Me caracterizo por ser persistente y curioso, con una notable capacidad de adaptación que me ha permitido desempeñarme en diversas actividades en países como Chile y Francia. Disfruto aprender constantemente y explorar nuevos horizontes.
+            El trabajo en equipo y el intercambio de conocimientos son aspectos que valoro profundamente, ya que creo que compartir experiencias enriquece tanto personal como profesionalmente.
+            En los últimos años, he decidido emprender un nuevo camino: me estoy formando en desarrollo web y explorando el vasto mundo de la tecnología, buscando no solo un cambio profesional, sino una transformación en mi forma de vida.</p>
+    </section>
+
+    <section id="estudios">
+        <h3>Estudios</h3>
+        <ul>
+             <li><strong>Full Stack Junior</strong> – Argentina Programa 4.0. (2022)
+                <img src="img/YoProgramo_Certificado.jpg" alt="Foto Certificado" class="profile-cert" onclick="agrandarImagen(this)">
+            </li>
+           
+        </ul>   
+        <ul>
+            <li><strong>Primeros pasos en Front End</strong> – Ticmas, Argentina Programa 4.0. (2023)
+                <img src="img/Ticmas.jpg" alt="Foto Certificado" class="profile-cert" onclick="agrandarImagen(this)">
+            </li>
+        </ul>  
+        <ul>
+            <li><strong>Desarrollarod Web</strong> – Coderhouse. (2023)
+                <img src="img/desarrollo_web.png" alt="Foto Certificado" class="profile-cert" onclick="agrandarImagen(this)">
+            </li>
+        </ul>  
+        <ul>
+            <li><strong>Java Script</strong> – Coderhouse. (2023)
+                <img src="img/js.png" alt="Foto Certificado" class="profile-cert" onclick="agrandarImagen(this)">
+            </li>
+        </ul>  
+        <ul>
+            <li><strong>React JS</strong> – Coderhouse. (2023)
+                <img src="img/react_js.png" alt="Foto Certificado" class="profile-cert" onclick="agrandarImagen(this)">
+            </li>
+        </ul>  
+        <ul>
+            <li><strong>Desarrollo Frontend React</strong> – Coderhouse. (2023)
+                <img src="img/desarrollo_Frontend.jpg" alt="Foto Certificado" class="profile-cert" onclick="agrandarImagen(this)">
+            </li>
+        </ul>  
+        <ul>
+            <li><strong>SQL</strong> – Coderhouse. (2023)
+                <img src="img/sql.png" alt="Foto Certificado" class="profile-cert" onclick="agrandarImagen(this)">
+            </li>
+        </ul>  
+    </section>
+
+    <section id="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>Desarrollo web: HTML, CSS, Bootstrap, Github, Sass, React JS, SQL, Git, JavaScript, Word, Excel</li>
+        </ul>
+        <ul><li>Análisis y auditoría de procesos</li>
+        </ul>
+        <ul><li>Trabajo en equipo y liderazgo</li>
+        </ul>
+    </section>
+
+    <section id="idiomas">
+        <h3>Idiomas</h3>
+        <ul>
+            <li><strong>Español</strong> – Nativo</li>
+        </ul>
+        <ul><li><strong>Inglés</strong> – Nivel Intermedio (A2)</li>
+        </ul>
+        <ul><li><strong>Francés</strong> – Nivel Intermedio (B1)</li>
+        </ul>
+    </section>
+
+    <!-- <section id="otros-conocimientos">
+        <h3>Otros Conocimientos</h3>
+    </section> -->
+
+    <!-- Sección de experiencia -->
+    <section id="experience">
+        <h2>Experiencia</h2>
+        <ul>
+            <li>
+                <h3>Importante Empresa Gastronómica - Auditoría, Mesa de Ayuda, Sistemas.</h3>
+                <p>Realización de informes, resolución de inconvenientes en locales, manejo de base de datos.</p>
+                <p><em>Diciembre 2023 - Actualidad</em></p>
+            </li>
+            <li>
+                <h3>Municipalidad de la Ciudad de Mendoza - Administrativo.</h3>
+                <p>Confección de Ordenanzas, Decretos, Resoluciones. Análisis de expedientes de obras.</p>
+                <p><em>Abril 2013 - Diciembre 2023</em></p>
+            </li>
+            <li>
+                <h3>Dirección General de Escuelas - Profesor de Historia de Nivel Secundario.</h3>
+                <p>Dictado de clases en diferentes escuelas de la provincia.</p>
+                <p><em>Abril 2018 - Diciembre 2023</em></p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de habilidades -->
+    <section id="skills">
+        <h2>Aptitudes</h2>
+        <ul>
+            <li>Trabajo en equipo</li>
+            <li>Resolución de problemas</li>
+            <li>Atención al público</li>
+            <li>Extrovertido</li>
+            <li>Analista</li>
+            <li>Pensador</li>
+            <li>Curioso</li>
+            <li>Responsable</li>
+            <li>Comprometido</li>
+
+        </ul>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Email: <a>gvillanus@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-villanueva-929001275/">Mi LinkedIn</a></p>
+    </section>
+
+   
+
+    <script src="script.js"></script>
+    <script>
+        function agrandarImagen(img) {
+            img.classList.toggle('agrandada');
+        }
+    </script>
+</body>
+</html>

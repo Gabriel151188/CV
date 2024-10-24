@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color:#7568ad;
+}
+
+.header {
+    display: flex; /* Activa el modelo flexbox */
+    align-items: center; /* Alinea verticalmente la imagen y el bloque de texto */
+    justify-content: center; /* Alinea todo a la izquierda */
+    gap: 40px; /* Espacio entre la imagen y el texto */
+    padding: inherit;
+}
+
+.profile-pic {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+.text-container {
+    display: flex; /* Activa flexbox en el contenedor de texto */
+    flex-direction: column; /* Alinea el texto en columna (uno debajo del otro) */
+}
+
+.header h1, .header p {
+    margin: 0; /* Elimina los márgenes predeterminados para mejor alineación */
+}
+
+
+h1 {
+    margin: 10px 0;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Estilos para las listas */
+ul {
+    list-style-type: disc; /* Asegura que la lista tenga viñetas de tipo punto */
+    padding-left: 40; /* Espacio a la izquierda para las viñetas */
+    
+}
+
+/* Estilo para los elementos de la lista */
+/* li {
+    display: inline-flex; /* Define el contenedor como un flexbox */
+    align-items: flex-start; /* Alinea verticalmente el texto y la imagen */
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+} */
+li {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li::before {
+    color: #333; /* Color de la viñeta */
+    font-size: 20px; /* Tamaño de la viñeta */
+    margin-right: 10px; /* Espacio entre la viñeta y el texto */
+    line-height: 1;
+}
+/* Estilo para los certificados */
+.profile-cert {
+    width: 100px; /* Ancho original de la imagen */
+    transition: transform 0.3s; /* Transición suave al agrandar */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    margin-left: 10px; /* Espacio a la izquierda de la imagen */
+}
+
+.profile-cert.agrandada {
+    transform: scale(6); /* Escala la imagen al doble de su tamaño */
+}
+
+/* Estilos para secciones */
+section {
+    background: rgb(114 175 229); /* Fondo blanco para secciones */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio entre secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Sombra sutil */
+}
+
+/* Botón */
+#info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color azul */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#info-button:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
